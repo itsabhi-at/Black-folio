@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="list-item active"><a href="index.html">About</a></li>
+        <li class="list-item"><a href="work.html">Projects</a></li>
+        <li class="list-item"><a href="contact.html">Contacts</a></li>
+      </ul>
+    </nav>
+    <div class="project-div">
+      <h1 class="project-title1">E-commerce</h1>
+      <h1 class="project-title2">Website</h1>
+    </div>
+    <!-- this is linked to the work page html project-desc  -->
+    <div id="project-page-desc" class="project-desc">
+      <div class="project-left">
+        <h3>A bit about the project</h3>
+      </div>
+      <div class="project-right">
+        <p>
+          This is a e-commerce website for a online clothing store , consist of
+          a main landing page , catalogue page and a product page. Using
+          Html/css/Javascript.
+        </p>
+      </div>
+    </div>
+    <main>
+      <!--image slider start-->
+      <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="/images/poocshome.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/images/poocshome2.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/images/poocscatalogue.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/images/poocsproduct.png" alt="" />
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+    </main>
+
+    <div class="scroll-container">
+      <ul class="scroll">
+        <li>
+          <a href="/work.html">My Work</a><span class="pbullet">(00)</span>
+        </li>
+        <li>
+          <a href="/foodapiproject.html">Recipe Web app</a
+          ><span class="pbullet">(02)</span>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/abhishek-tomar-iiit"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>Linkedin
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/baadal_awaara/" target="_blank"
+            ><i class="fab fa-instagram"></i>Instagram</a
+          >
+        </li>
+        <li>
+          <a href="mailto:itsabhi.at@gmail.com"
+            ><i class="fas fa-at"></i>Gmail</a
+          >
+        </li>
+      </ul>
+    </footer>
+    <script src="/app.js"></script>
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+          counter = 1;
+        }
+      }, 5000);
+    </script>
+  </body>
+</html>
